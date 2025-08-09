@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Harry Potter and You!</h1>
+        <nav>
+            <ul>
+                <li><a href="#Who is Your Favorite Character?">Favorite Character</a></li>
+                <li><a href="#Hogwarts House">House</a></li>
+                <li><a href="#Where is Your Common Room?">Common Room</a></li>
+                <li><a href="#What Subjects are You Taking?">Subjects</a></li>
+                <li><a href="#Blood Status">Blood Status</a></li>
+                <li><a href="#Quidditch Rules">Quidditch Rules</a></li>
+                <li><a href="#Submit">Submit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Who is Your favorite Character?</h2>
+            <form action="/submit" method="post">
+            <label for="character">Choose a character:</label>
+            <input type="text" id="character" name="character" placeholder="e.g. Harry Potter, Hermione Granger, Ron Weasley">
+            </form>
+        </section>
+        <section>
+            <h2>Hogwarts House</h2>
+            <div>
+                <input type="radio" id="Gryffindor" name="house" value="Gryffindor">
+                <label for="Gryffindor">Gryffindor</label>
+                <input type="radio" id="Hufflepuff" name="house" value="Hufflepuff">
+                <label for="Hufflepuff">Hufflepuff</label>
+                <input type="radio" id="Ravenclaw" name="house" value="Ravenclaw">
+                <label for="Ravenclaw">Ravenclaw</label>
+                <input type="radio" id="Slytherin" name="house" value="Slytherin">
+                <label for="Slytherin">Slytherin</label>
+            </div>
+        </section>
+        <section>
+            <h2>What Subjects are You Taking?</h2>
+            <div>
+<input type="checkbox" id="potions" name="subjects" value="Potions">
+<label for="potions">Potions</label>
+<input type="checkbox" id="herbology" name="subjects" value="Herbology">
+<label for="herbology">Herbology</label>
+<input type="checkbox" id="defense-against-the-dark-arts" name="subjects" value="Defense Against the Dark Arts">
+<label for="defense-against-the-dark-arts">Defense Against the Dark Arts</label>
+<input type="checkbox" id="transfiguration" name="subjects" value="Transfiguration">
+<label for="transfiguration">Transfiguration</label>
+<input type="checkbox" id="care-of-magical-creatures" name="subjects" value="Care of Magical Creatures">
+<label for="care-of-magical-creatures">Care of Magical Creatures</label>
+<input type="checkbox" id="charms" name="subjects" value="Charms">
+<label for="charms">Charms</label> 
+<input type="checkbox" id="divination" name="subjects" value="Divination">
+<label for="divination">Divination</label>
+<input type="checkbox" id="astronomy" name="subjects" value="Astronomy">
+<label for="astronomy">Astronomy</label>
+<input type="checkbox" id="ancient-runic-studies" name="subjects" value="Ancient Runes">
+<label for="ancient-runic-studies">Ancient Runes</label>
+<input type="checkbox" id="muggle-studies" name="subjects" value="Muggle Studies">
+<label for="muggle-studies">Muggle Studies</label>
+            </div>
+        </section>
+        <section>
+            <h2>Blood Status</h2>
+            <label for="blood-status">What is your blood status?:</label>
+            <select id="blood-status" name="blood-status">
+                <option value="pure-blood">Pure-blood</option>
+                <option value="half-blood">Half-blood</option>
+                <option value="muggle-born">Muggle-born</option>
+                <option value="muggle">Muggle</option>
+                <option value="squib">Squib</option>
+            </select>
+        </section>
+        <section>
+            <h2>Please Describe the Main Rules of Quidditch</h2>
+            <label for="quidditch-rules">Quidditch Rules:</label>
+            <textarea id="quidditch-rules" name="quidditch-rules" rows="50" cols="50"></textarea>
+        </section>
+        <section>
+            <input type="submit" value="Submit">
+        </section>
+        </main>
+</body>
+</html>
