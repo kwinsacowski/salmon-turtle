@@ -31,13 +31,13 @@
         <section>
             <h2>Hogwarts House</h2>
             <div>
-                <input type="radio" id="Gryffindor" name="house" value="Gryffindor">
+                <input type="radio" id="Gryffindor" name="G house" value="Gryffindor">
                 <label for="Gryffindor">Gryffindor</label>
-                <input type="radio" id="Hufflepuff" name="house" value="Hufflepuff">
+                <input type="radio" id="Hufflepuff" name="H house" value="Hufflepuff">
                 <label for="Hufflepuff">Hufflepuff</label>
-                <input type="radio" id="Ravenclaw" name="house" value="Ravenclaw">
+                <input type="radio" id="Ravenclaw" name="R house" value="Ravenclaw">
                 <label for="Ravenclaw">Ravenclaw</label>
-                <input type="radio" id="Slytherin" name="house" value="Slytherin">
+                <input type="radio" id="Slytherin" name="S house" value="Slytherin">
                 <label for="Slytherin">Slytherin</label>
             </div>
         </section>
@@ -69,7 +69,7 @@
         <section>
             <h2>Blood Status</h2>
             <label for="blood-status">What is your blood status?:</label>
-            <select id="blood-status" name="blood-status">
+            <select id="blood-status" name="blood-status" required>
                 <option value="pure-blood">Pure-blood</option>
                 <option value="half-blood">Half-blood</option>
                 <option value="muggle-born">Muggle-born</option>
@@ -79,8 +79,8 @@
         </section>
         <section>
             <h2>Please Describe the Main Rules of Quidditch</h2>
-            <label for="quidditch-rules">Quidditch Rules:</label>
-            <textarea id="quidditch-rules" name="quidditch-rules" rows="50" cols="50"></textarea>
+            <label for="quidditch-rules"></label>
+            <textarea id="quidditch-rules" name="quidditch-rules" rows="25" cols="50"></textarea>
         </section>
         <section>
             <input type="submit" value="Submit">
