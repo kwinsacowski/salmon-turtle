@@ -10,10 +10,14 @@ body {
     text-align: center;
     list-style-type: none;
     padding: 1px;
+    display: inline-flex;
+    gap: 20px; /* space between items, adjust as needed */
 }
 .nav a {
     text-decoration: none;
     color: rgb(42, 124, 35);
+
+    
 }
 .nav a:hover {
     color: rgb(4, 37, 6);
@@ -28,4 +32,7 @@ main {
 section {
     margin: 10px;
     padding: 40px;
+} 
+hr {
+    border: 1px solid rgb(42, 124, 35);
 } 
