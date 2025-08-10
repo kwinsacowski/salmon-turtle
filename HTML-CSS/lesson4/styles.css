@@ -8,11 +8,24 @@ body {
 }
 .nav {
     text-align: center;
-    background-color: black
+    list-style-type: none;
+    padding: 1px;
+}
+.nav a {
+    text-decoration: none;
+    color: rgb(42, 124, 35);
+}
+.nav a:hover {
+    color: rgb(4, 37, 6);
+    text-decoration: wavy underline;
 }
 fieldset {
-    border: 1px solid black;
+    border: none;
 }
 main {
     text-align: center;
 }
+section {
+    margin: 10px;
+    padding: 40px;
+} 
