@@ -6,3 +6,13 @@ h1 {
 body {
     background-color: lightgoldenrodyellow;
 }
+.nav {
+    text-align: center;
+    background-color: black
+}
+fieldset {
+    border: 1px solid black;
+}
+main {
+    text-align: center;
+}
