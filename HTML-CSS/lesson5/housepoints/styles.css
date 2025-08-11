@@ -1,0 +1,40 @@
+.Ravenclaw  {
+    background-color: rgb(22, 108, 184);
+}
+
+.Gryffindor  {
+    background-color: rgb(184, 22, 22);
+}
+
+.Hufflepuff  {
+    background-color: rgb(184, 184, 22);
+}
+
+.Slytherin  {
+    background-color: rgb(22, 184, 22);
+
+}
+
+section {
+    justify-content: center;
+    justify-content:  space-evenly;
+}
+
+.container {
+    width: 100%;
+}
+
+div {
+    display: inline-block;
+    padding: 10px;
+    margin: 1px;
+    border: solid 3px rgb(0, 0, 0);
+}
+
+div p {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+}
+}
