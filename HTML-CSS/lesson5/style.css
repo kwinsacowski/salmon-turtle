@@ -5,20 +5,23 @@
     float: left;
     padding: 5px;
     width: 47%;
+    display: block;
+    height: auto;
 }
 
 .right-column {
     float: right;
     padding: 5px;
     width: 47%;
-}
-
-#sirius {
-    width: 100%;
+    display: block;
     height: auto;
 }
 
-#lupin {
+.container2{
     width: 100%;
-    height: auto;
+    display: flex
+}
+
+span {
+    display: inline-block;
 }
