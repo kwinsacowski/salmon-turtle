@@ -22,6 +22,7 @@ section {
 
 .container {
     width: 100%;
+    justify-content: space-around;
 }
 
 div {
@@ -36,4 +37,14 @@ div p {
     font-family: cursive;
     color: rgb(0, 0, 0);
     font-size: 27px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 10px;
+}
+.grid-container div {
+  background-color: lightcoral;
+  padding: 20px;
 }
