@@ -96,7 +96,7 @@ header {
       padding: 2rem;
       gap: 2rem;
     }
-
+    /* index.html*/
      /* Left side adoption highlight */
     .adoption-highlight {
       flex: 1;
@@ -111,16 +111,16 @@ header {
     }
 
     .adoption-highlight img {
-        width: 200px;
+        max-width: 100%;   /* scale down with container */
+        height: auto;      /* keeps aspect ratio */
         display: block;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
 
     .adoption-highlight h3{
         text-align: center;
     }
      .adoption-highlight a {
-        background-color: var(--yellow);
         color: #000;
         text-align: center;
         text-decoration: none;
@@ -130,9 +130,6 @@ header {
         transition: background-color 0.3s ease;
     }
 
-    .adoption-highlight a :hover {
-        background-color: var(--blue2);
-    }
 
    /* Right side container with about + inspiration */
     .right-side {
@@ -146,8 +143,8 @@ header {
         display: flex;
         float: right;
         padding: 10px;
-        width: 200px;
-        height: auto;
+        max-width: 50%;   /* scale down with container */
+        height: auto;  
     }
 
     .about-us, .inspiration {
@@ -179,6 +176,11 @@ header {
       background-color: var(--green);
       color: var(--text-light);
       margin-top: 2rem;
+    }
+
+    button:hover {
+      background: var(--blue2);
+      color: var(--text-light);
     }
 
     /* Mobile Responsive */
@@ -232,3 +234,159 @@ header {
         font-size: 1rem;
       }
     }
+
+   /* events.html*/
+    .mainevents {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  gap: 3rem; /* spacing between grid and schedule */
+}
+
+.mainevents .events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.mainevents .schedule {
+  background-color: var(--green);
+  color: var(--text-light);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.mainevents .schedule h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+table td {
+  padding: 0.75rem 1rem;
+}
+
+
+/* menu.html*/
+.menu-grid {
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  margin: 1.5rem auto;
+  max-width: 400px;
+  display: block;
+
+}
+
+.menu-disclaimer {
+  background-color: var(--green);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin: auto;
+  max-height: 200px;
+  max-width: 200px;    /* narrower box */
+  display: flex;       /* center vertically */
+  align-items: center; 
+  justify-content: center;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* location.html*/
+.locations img{ max-width: 100%;   /* scale down with container */
+        height: auto;      /* keeps aspect ratio */
+        display: block;
+        margin: 0 auto; 
+    }
+
+/* contact.html*/
+form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      background: var(--green);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      color: var(--text-light);
+    }
+
+     label {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    input, select, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+      max-height: 400px;
+    }
+
+    .newsletter {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    button {
+      background: var(--yellow);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+      color: var(--text-dark);
+    }
+
+
+/* kitten-korner.html*/
+.kitten-hero {
+      background: url('paws2.jpg') center/cover no-repeat, var(--green);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+.kitten-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+.kitten-hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+.kitten-hero .cta-btn {
+      background-color: var(--green);
+      color: var(--text-dark);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius:2px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+ .kitten-hero .cta-btn:hover {
+      background-color: var(--green2);
+    }
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Days Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <section class="hero">
+  <h1>Contact Us</h1>
+  <p>
+    Have questions about our events, adoption opportunities, or just want to say hello?  
+    We’d love to hear from you! 
+    Together, we can make tails wag and build a stronger community for our furry friends.
+  </p>
+</section>
+<br>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="menu.html">Menu</a>
+      <a href="location.html">Location</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="kitten-korner.html">Kitten Korner</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="reason">Reason for Message:</label>
+        <select id="reason" name="reason" required>
+          <option value="">-- Select an option --</option>
+          <option value="general">General Inquiry</option>
+          <option value="host">Host an Event</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="adoption">Adoption Information</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" maxlength="10000" required></textarea>
+      </div>
+
+      <div class="newsletter">
+        <input type="radio" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter">Sign me up for the electronic newsletter</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dog Days Events. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
