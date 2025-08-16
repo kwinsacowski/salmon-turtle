@@ -59,18 +59,6 @@ header {
       background-color: var(--green2);
     }
 
-     /* Hamburger button */
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 2rem;
-      color: var(--text-light);
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
 
     nav {
       display: flex;
@@ -96,7 +84,8 @@ header {
       padding: 2rem;
       gap: 2rem;
     }
-    /* index.html*/
+
+   /* index.html*/
      /* Left side adoption highlight */
     .adoption-highlight {
       flex: 1;
@@ -219,7 +208,7 @@ header {
       .hero p {
         font-size: 1rem;
       }
-    }
+}
 
     @media (max-width: 480px) {
       body {
@@ -246,7 +235,7 @@ header {
 
 .mainevents .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -255,6 +244,8 @@ header {
   color: var(--text-light);
   border-radius: 10px;
   padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mainevents .schedule h2 {
@@ -268,29 +259,60 @@ table td {
 
 
 /* menu.html*/
-.menu-grid {
-  padding: 2rem 1rem;
-  border-radius: 5px;
-  margin: 1.5rem auto;
-  max-width: 400px;
-  display: block;
-
+.menu {    /* anchor point for children */
+  display: flex;
+  flex-direction: column;  /* stack menu-grid and disclaimer */
+  gap: 5px;               /* spacing between them */
+  margin: 2rem auto;
+  max-width: 800px;        /* keeps everything from stretching too far */
+  width: 90%;
 }
 
 .menu-disclaimer {
+  align-content: center;
   background-color: var(--green);
   color: var(--text-dark);
   text-align: center;
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  margin: auto;
+  padding: 1rem;
+  border-radius: 500px;
   max-height: 200px;
-  max-width: 200px;    /* narrower box */
-  display: flex;       /* center vertically */
-  align-items: center; 
-  justify-content: center;
+  max-width: 200px;  
   font-size: 0.95rem;
   font-style: italic;
+}
+ .mainmenu {
+  display: grid;
+  grid-template-columns: auto auto;  /* two columns: menu + disclaimer */
+  justify-content: center;           /* center the grid horizontally */
+  align-items: center;
+  gap: 5rem;                          /* space between the two sections */
+  margin: 2rem auto;
+  max-width: 1200px;
+ }
+
+.menu-table {
+  border-collapse: collapse;  
+  max-width: 20rem;             
+  table-layout: auto;
+  margin-bottom: 25px;
+}
+
+.menu-table td {
+  padding: 7px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .mainmenu {
+    grid-template-columns: 1fr;  /* single column */
+    gap: 2rem;                   /* smaller spacing on mobile */
+    text-align: center;          /* optional: center text */
+  }
+
+  .menu-disclaimer {
+    margin: 0 auto;   /* center disclaimer bubble */
+  }
 }
 
 /* location.html*/
@@ -313,20 +335,35 @@ form {
       color: var(--text-light);
     }
 
+  .maincontact {
+    display: flex;
+    justify-content: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: row;
+  }
+
      label {
       font-weight: bold;
       margin-bottom: 0.25rem;
     }
 
-    input, select, textarea {
+input, select, textarea {
       padding: 0.75rem;
       border: none;
       border-radius: 6px;
       font-size: 1rem;
-    }
+}
 
     textarea {
-      resize: vertical;
+      resize: none;
       min-height: 150px;
       max-height: 400px;
     }
@@ -388,5 +425,23 @@ form {
 
  .kitten-hero .cta-btn:hover {
       background-color: var(--green2);
+    }
+
+    .mainkitten {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: arem;
+    }
+
+    .mainkitten img {
+      display: flex;
+      float: right;
+      padding: 10px;
+      max-width: 300px;
+      height: auto;
+      max-height: 300px;
+      border-radius: 100px;
     }
 
