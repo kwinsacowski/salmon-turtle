@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitbull Dog Walking Event</title>
+<style>
+    /* Root color variables */
+    :root {
+        --blue: #1e3a8a;
+        --green: #059669;
+        --yellow: #facc15;
+        --text-light: #ffffff;
+        --max-width: 1000px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+    }
+
+    /* Hero section in header */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--blue), var(--green));
+        color: var(--text-light);
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin-bottom: 25rem;
+    }
+
+    header a {
+        background-color: var(--yellow);
+        color: #000;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 9999px;
+        transition: background-color 0.3s ease;
+    }
+
+    header a:hover {
+        background-color: #eab308;
+    }
+
+    /* Event section */
+    section {
+        max-width: var(--max-width);
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    body{
+        background: linear-gradient(135deg, var(--blue), var(--green));
+    }
+
+    section h2 {
+        text-align: center;
+        color: var(--blue);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .event-details {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--green);
+        font-weight: bold;
+    }
+
+    /* Images with wrapped text */
+    .event-content img {
+        max-width: 250px;
+        border-radius: 10px;
+        margin: 0.5rem;
+    }
+
+    .left {
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .right {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+        margin-left: 1rem; 
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2.25rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .event-content img {
+            float: none;
+            display: block
+            margin: 1rem auto;
+        }
+    }
+
+    /* Smooth scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+</head>
+<header>
+    <h1>Welcome to the Pitbull Walking Group</h1>
+    <p>Join us for a fun day walking and socializing with our friendly pitbulls. Everyone is welcome!</p>
+    <a href="#event">Get Started</a>
+</header>
+<body>
+
+<section id="event">
+    <h2>Pitbull Group Walk Event</h2>
+    <div class="event-details">
+        📅 Date: September 10, 2025 | 🕒 Time: 10:00 AM | 📍 Location: Riverside Park
+    </div>
+    <div class="event-content">
+        <div class="right">
+            <img src="pitbull3.jpg" alt="Pitbull 3">
+            <img src="pitbull2.jpg" alt="Pitbull 2">
+            </div>
+        <img src=pitbull1.jpg alt="Pitbull 1" class="left">
+        <p>Our pitbull walking group is gathering once again for an exciting and heartwarming walk through Riverside Park. Bring your furry friend and join fellow dog lovers as we enjoy the fresh air, meet new friends, and celebrate our wonderful pitbulls.</p>
+        <p>During the event, you'll have the opportunity to learn more about pitbull care, training tips, and fun activities to keep your dog active and happy. The walk is suitable for all fitness levels, and we’ll have water stations for both humans and dogs.</p>
+        <p>Don't miss this chance to connect with our amazing community. Whether you have a pitbull or just love dogs, you’re welcome to join in the fun. Let's make it a day to remember!</p>
+    </div>
+</section>
+
+</body>
+</html>
