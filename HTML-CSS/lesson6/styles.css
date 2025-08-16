@@ -31,9 +31,24 @@ header {
     text-align: center;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(5, 5, 5, 5);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+
+
 h1 {
     box-shadow: 0 4px 8px rgb(0, 0, 0);
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);;}
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    animation: bounce 1s 20;
+}
 
 #red {
     background-color: red;
@@ -82,6 +97,10 @@ h1 {
     background-color: gray
 }
 
+.grid-container:hover {
+    background-color: black;
+}
+
 #red2 {
     background-color: red;
     width: 100px;
@@ -122,4 +141,53 @@ h1 {
     text-decoration: none;
     list-style-type: none;
     color: black;
+}
+
+button {
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: chartreuse;
+    transition: background-color 1s ease;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
 }
