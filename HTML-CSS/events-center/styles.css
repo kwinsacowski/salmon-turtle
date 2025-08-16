@@ -1,0 +1,234 @@
+:root {
+    --blue:#38c4e4;
+    --blue2: #7EBFCD;
+    --green: #2D9C8C;
+    --yellow: #f2f543;
+    --text-light: #ffffff;
+    --text-dark:#000000;
+}
+
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:linear-gradient(135deg, var(--yellow), var(--blue));
+      color: var(--text-dark);
+    }
+
+header {
+      background-color: var(--green);
+      padding: 1rem;
+    }
+
+      /* Hero section */
+    .hero {
+      background: url('paws.jpg') center/cover no-repeat, var(--green);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero .cta-btn {
+      background-color: var(--green);
+      color: var(--text-dark);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius:2px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .hero .cta-btn:hover {
+      background-color: var(--green2);
+    }
+
+     /* Hamburger button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--text-light);
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--yellow);
+    }
+
+       main {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+     /* Left side adoption highlight */
+    .adoption-highlight {
+      flex: 1;
+      background-color: var(--green);
+      padding: 1rem;
+      border-radius: 10px;
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+    }
+
+    .adoption-highlight img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .adoption-highlight h3{
+        text-align: center;
+    }
+     .adoption-highlight a {
+        background-color: var(--yellow);
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 9999px;
+        transition: background-color 0.3s ease;
+    }
+
+    .adoption-highlight a :hover {
+        background-color: var(--blue2);
+    }
+
+   /* Right side container with about + inspiration */
+    .right-side {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .about-us img {
+        display: flex;
+        float: right;
+        padding: 10px;
+        width: 200px;
+        height: auto;
+    }
+
+    .about-us, .inspiration {
+      background-color: var(--green);
+      padding: 1rem;
+      border-radius: 10px;
+      color: var(--text-light);
+    }
+
+    .inspiration {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .inspiration img {
+      max-width: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--green);
+      color: var(--text-light);
+      margin-top: 2rem;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .adoption-highlight, 
+      .right-side {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        font-size: 1.2rem;
+      }
+
+      .inspiration {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .inspiration img {
+        max-width: 100%;
+      }
+    
+    .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 0.95rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+    }
