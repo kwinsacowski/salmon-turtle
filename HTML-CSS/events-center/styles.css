@@ -42,29 +42,12 @@ header {
       margin: 0 auto 2rem;
     }
 
-    .hero .cta-btn {
-      background-color: var(--green);
-      color: var(--text-dark);
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius:2px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .hero .cta-btn:hover {
-      background-color: var(--green2);
-    }
-
-
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 2rem;
+      padding-top: 15px;
     }
 
     nav a {
@@ -119,6 +102,11 @@ header {
         transition: background-color 0.3s ease;
     }
 
+    button:hover {
+      background: var(--blue2);
+      color: var(--text-light);
+    }
+  
 
    /* Right side container with about + inspiration */
     .right-side {
@@ -167,10 +155,6 @@ header {
       margin-top: 2rem;
     }
 
-    button:hover {
-      background: var(--blue2);
-      color: var(--text-light);
-    }
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
@@ -283,7 +267,7 @@ table td {
  .mainmenu {
   display: grid;
   grid-template-columns: auto auto;  /* two columns: menu + disclaimer */
-  justify-content: center;           /* center the grid horizontally */
+  justify-content: center;           
   align-items: center;
   gap: 5rem;                          /* space between the two sections */
   margin: 2rem auto;
@@ -293,13 +277,11 @@ table td {
 .menu-table {
   border-collapse: collapse;  
   max-width: 20rem;             
-  table-layout: auto;
   margin-bottom: 25px;
 }
 
 .menu-table td {
   padding: 7px;
-  margin: 0;
   vertical-align: middle;
 }
 
@@ -307,20 +289,42 @@ table td {
   .mainmenu {
     grid-template-columns: 1fr;  /* single column */
     gap: 2rem;                   /* smaller spacing on mobile */
-    text-align: center;          /* optional: center text */
+  }
+
+  menu, .menu-disclaimer {
+   justify-self: center;  /* center both sections */
   }
 
   .menu-disclaimer {
-    margin: 0 auto;   /* center disclaimer bubble */
+    margin-top: 1rem;  /* space above disclaimer */
   }
+
 }
 
 /* location.html*/
-.locations img{ max-width: 100%;   /* scale down with container */
-        height: auto;      /* keeps aspect ratio */
-        display: block;
+.locations img{ 
+        max-width: 100%;   /* scale down with container */
+        height: auto;   
+        display: flex; 
+        justify-content: center;
         margin: 0 auto; 
     }
+
+    .maincampus {
+      display: flex;
+      text-align: center;
+
+    }
+
+    .otherloc {
+      display: flex;
+      text-align: center;
+    }
+
+    .otherloc ul {
+      list-style-type: none;
+    }
+
 
 /* contact.html*/
 form {
@@ -436,8 +440,6 @@ input, select, textarea {
     }
 
     .mainkitten img {
-      display: flex;
-      float: right;
       padding: 10px;
       max-width: 300px;
       height: auto;
