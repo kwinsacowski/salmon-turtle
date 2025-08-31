@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOMination: JavaScript Fundamentals Quiz</title>
+</head>
+<body>
+    <header class="header">
+        <hero id="hero">
+        <h1 id = "main-heading">So You Think You know Javascript?</h1>
+        </hero>
+    </header>
+
+
+    <main class="main">
+        <div id="quiz-container">
+            <h2>Test Your Knowledge</h2>
+            <div id="question-container"></div>
+            <div id="options-container"></div>
+            <button id="start-button">Start Quiz</button>
+            <button id="next-button" class="hidden">Next Question</button>
+        </div>
+
+        <div id="score-container" class="hidden">
+            <h2>Your Mastery Level</h2>
+            <p id="score"></p>
+            <button id="restart-button">Restart Quiz</button>
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
