@@ -25,7 +25,7 @@ header {
 }
 
 #hero h1 {
-  font-size: 3rem;
+  font-size: 6vw;
   color: #fdfdfd;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
@@ -37,6 +37,7 @@ header {
   gap: 2rem;
   padding: 2rem;
   text-align: center;
+  margin-inline: 15vw;
   background: rgba(0, 0, 0, 0.4); /* contrast from clouds */
 }
 

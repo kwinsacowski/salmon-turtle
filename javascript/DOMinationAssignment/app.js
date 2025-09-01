@@ -107,6 +107,7 @@ let currentQuestionIndex = 0;
 startQuizButton.addEventListener("click", loadQuestionOne);
 
 function loadQuestionOne(){
+    
     scoreContainer.classList.remove("hidden"); 
     loadQuestion(currentQuestionIndex);
 
