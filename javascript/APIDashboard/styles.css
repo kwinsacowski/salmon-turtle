@@ -1,0 +1,93 @@
+ /* styles.css */{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color:#5a5a5a;
+      padding: 2rem;
+    }
+
+    .main-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ffffff;
+    }
+
+      .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .grid-item h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-item button {
+      padding: 0.5rem 1rem;
+      background-color: #D8C6A3;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      margin-top: 5px;
+    }
+
+    .grid-item button:hover {
+      background-color: #8d826b;
+    }
+
+    .output {
+      margin-top: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+
+    #dog-api {
+      background-color: #8C2F39;
+    }
+
+    #cat-api {
+      background-color: #A64B2A;
+    }
+
+    #weather-api {
+      background-color: #D98E04;
+    }
+
+    #currency-api {
+      background-color: #3f513b;
+    }
+
+    #movies-api {
+      background-color: #6E3B1E;
+    }
+
+    #github-api {
+      background-color: #607080;
+    }
+
+    #joke-api {
+      background-color: #768059;
+    }
+
+    #public-api{
+        background-color: #524d64;
+    }
